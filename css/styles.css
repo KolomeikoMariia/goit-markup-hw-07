@@ -1,3 +1,178 @@
+:root{
+--main-text-color:#434455;
+--dark-text-color:#2E2F42;
+--accent-text-color:#4D5AE5;
+--dark-accent-color:#404BBF;
+--middle-text-color:#E7E9FC;
+--light-text-color:#FFFFFF;
+--light-logo-color:#F4F4FD;
+--dark-bg-color:#2E2F42;
+--light-bg-color:#F4F4FD;
+}
+
 body {
-font-family: sans-serif, Roboto;
+font-family: Roboto, sans-serif;
+color: var(--dark-text-color);
+}
+.button{
+   cursor: pointer;
+   border: none;
+}
+/* ------------------Header-------------- */
+.list{
+   list-style: none;
+}
+
+.link{
+   text-decoration: none;
+   color: currentColor;
+   font-style: normal;
+   font-family: inherit;
+ }
+
+ .link:hover, 
+ .link:focus{
+color: var(--accent-text-color);
+ }
+ 
+ .logo{
+   font-family: Raleway, sans-serif;
+   font-weight: 800;
+   Font-size: 18px;
+   Line-height: 1.14;
+ }
+ .logo-part{
+   color: var(--accent-text-color);
+ }
+
+ .navigate-list{
+font-weight: 500;
+font-size: 16px;
+Line-height: 1.28;
+color: var(--dark-text-color);
+ }
+
+ .navigate-list-item:hover,
+ .navigate-list-item:focus
+ {
+color: var(--accent-text-color);
+ }
+ .adress-list{
+font-weight: 400;
+font-size: 16px;
+line-height: 1.28;
+color: var(--main-text-color);
+ }
+
+
+
+ /* -----------Hero---------------- */
+ .hero-section{
+   background-color: var(--dark-bg-color);
+ }
+.hero-title{
+color: var(--light-text-color);
+font-weight: 700;
+Font-size: 56px;
+Line-height: 0.9;
+}
+
+.hero-button{
+background-color: var(--accent-text-color);
+color: var(--light-text-color);
+font-family: inherit;
+font-weight:500;
+Font-size: 16px;
+Line-height: 1.28;
+}
+.hero-button:focus,
+.hero-button:hover{
+   background-color: var(--dark-accent-color);
+}
+
+/* ----------Advantages------------ */
+
+.advantages-list-title{
+color: var(--dark-text-color);
+font-weight: 500;
+Font-size: 20px;
+Line-height: 1.02;
+}
+
+.advantages-list-text{
+color: var(--main-text-color);
+   font-size: 16px;
+   line-height: 1.28;
+}
+
+/* -----------------Works---------------- */
+.works-title{
+   color: var(--dark-text-color);
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 0.95;
+}
+
+/* ------------------Team---------------- */
+.team-section{
+   background-color: var(--light-bg-color);
+}
+.team-list-item{
+   background-color: var(--light-text-color);
+}
+.team-list-title{
+   color: var(--dark-text-color);
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 1.02;
+}
+
+.team-list-text{
+ color: var(--main-text-color);
+   font-size: 16px;
+   line-height: 1.28;
+}
+
+/* --------------Footer--------------- */
+.footer{
+   background-color: var(--dark-bg-color);
+}
+
+.logo-light-part{
+   color: var(--light-logo-color);
+}
+.footer-text{
+   color: var(--middle-text-color);
+   font-size: 16px;
+   line-height: 1.28;
+}
+
+/*=================== PORTFOLIO PAGE ============================*/
+.filter-button{
+   background-color: var(--middle-text-color);
+   color:var(--accent-text-color);
+   font-family: inherit;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.28;
+      letter-spacing: 0.04em;
+      text-align: center;
+}
+
+.filter-button:hover,
+.filter-button:focus{
+   background-color: var(--dark-accent-color);
+   color: var(--light-text-color);
+}
+.filter-cards-title{
+   color: var(--dark-text-color);
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 1.02;
+      letter-spacing: 0.02em;
+      text-align: left;
+}
+.filter-cards-text{
+   color: var(--main-text-color);
+
 }
