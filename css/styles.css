@@ -33,29 +33,14 @@ color: var(--dark-text-color);
 font-weight: 500;
    line-height: 1.5;
    color: var(--dark-text-color);
-   align: left;
-   vertical-align: top;
-   letter-spacing: 2%;
+   letter-spacing: 0.02em;
 }
-.logo-link{
-   font-weight: 500;
-      line-height: 1.33;
-      color: var(--dark-text-color);
-      align: left;
-      vertical-align: top;
-      letter-spacing: 2%;
-
-}
-
 
  .navigate-link:hover, 
  .navigate-link:focus{
 color: var(--accent-text-color);
  }
 
- .adress-link{
-font-style: normal;
- }
   .adress-link:hover,
   .adress-link:focus {
      color: var(--accent-text-color);
@@ -66,9 +51,7 @@ font-family: Raleway, sans-serif;
 font-weight: 800;
 font-size: 18px;
 line-height: 1.33;
-align: left;
-vertical-align: center;
-letter-spacing: 3%;
+letter-spacing: 0.03em;
  }
  .logo-part{
    color: var(--accent-text-color);
@@ -82,9 +65,8 @@ color: var(--accent-text-color);
  .adress-link{
 line-height: 1.5;
 color: var(--main-text-color);
-align: left;
-vertical-align: top;
-letter-spacing: 2%;
+letter-spacing: 0.02em;
+font-style: normal;
  }
 
 
@@ -95,12 +77,9 @@ background-color: var(--dark-bg-color);
  }
 .hero-title{
 color: var(--light-text-color);
-font-weight: 700;
 Font-size: 56px;
 line-height: 1.07;
-align: center;
-vertical-align: top;
-letter-spacing: 2%;
+letter-spacing: 0.02em;
 }
 
 .hero-button{
@@ -118,22 +97,18 @@ background-color: var(--dark-accent-color);
 
 /* ----------Advantages------------ */
 
-.subtitle{
+.section-subtitle{
 color: var(--dark-text-color);
 font-weight: 500;
 font-size: 20px;
 line-height: 1.20;
-align: center;
-vertical-align: top;
-letter-spacing: 2%;
+letter-spacing: 0.02em;
 }
 
-.text{
+.section-text{
 color: var(--main-text-color);
 line-height: 1.5;
-align: center;
-vertical-align: top;
-letter-spacing: 2%;
+letter-spacing: 0.02em;
 }
 
 /* -----------------Works---------------- */
@@ -141,9 +116,7 @@ letter-spacing: 2%;
 color: var(--dark-text-color);
 font-size: 36px;
 line-height: 1.11;
-align: center;
-vertical-align: top;
-letter-spacing: 2%;
+letter-spacing: 0.02em;
 text-transform: capitalize;
 }
 
@@ -167,9 +140,7 @@ color: var(--light-logo-color);
 .footer-text{
 color: var(--middle-text-color);
 line-height: 1.5;
- align: left;
- vertical-align: top;
-letter-spacing: 2%;
+letter-spacing: 0.02em;
 }
 
 /*=================== PORTFOLIO PAGE ============================*/
