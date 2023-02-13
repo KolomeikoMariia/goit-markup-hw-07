@@ -99,7 +99,6 @@ background-color: var(--dark-accent-color);
 
 .section-subtitle{
 color: var(--dark-text-color);
-font-weight: 500;
 font-size: 20px;
 line-height: 1.20;
 letter-spacing: 0.02em;
@@ -112,7 +111,7 @@ letter-spacing: 0.02em;
 }
 
 /* -----------------Works---------------- */
-.title{
+.section-title{
 color: var(--dark-text-color);
 font-size: 36px;
 line-height: 1.11;
