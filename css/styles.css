@@ -333,7 +333,7 @@ border-radius: 4px;
 .cardset{
    display: flex;
    flex-wrap: wrap;
-   gap: 24px;
+   gap: 48px 24px;
 }
 
 .cardset-item{
