@@ -3,11 +3,13 @@
 --dark-text-color:#2E2F42;
 --accent-text-color:#4D5AE5;
 --dark-accent-color:#404BBF;
+--grn-accent-color: #31D0AA;
 --middle-text-color:#E7E9FC;
 --light-text-color:#FFFFFF;
 --light-logo-color:#F4F4FD;
 --dark-bg-color:#2E2F42;
 --light-bg-color:#F4F4FD;
+--main-icons-color:#8E8F99;
 }
 
 body {
@@ -80,6 +82,7 @@ img {
 
 .header{
    border-bottom: 1px solid var(--middle-text-color);
+   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container{
@@ -92,17 +95,17 @@ img {
    margin-right: 76px;
 }
 
- .logo {
+.logo {
     font-family: Raleway, sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
     letter-spacing: 0.03em;
- }
+}
 
- .logo-part {
+.logo-part {
     color: var(--accent-text-color);
- }
+}
 
 .navigate {
    margin-right: auto;
@@ -128,14 +131,8 @@ img {
  .navigate-link:hover, 
  .navigate-link:focus{
 color: var(--accent-text-color);
- }
+ }  
 
-  .navigate-link:hover,
-  .navigate-link:focus {
-     color: var(--accent-text-color);
-  }
-
-  
 
   .adress-link:hover,
   .adress-link:focus {
@@ -160,11 +157,15 @@ padding-bottom: 24px;
 
  /* -----------Hero---------------- */
  .hero-section{
-background-color: var(--dark-bg-color);
+background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
+background-repeat: no-repeat;
+background-size: contain;
+background-position: center;
 padding-top: 188px;
 padding-bottom: 188px;
 text-align: center;
  }
+
 
 .hero-title{
 display: block;
@@ -208,6 +209,7 @@ margin-bottom: 8px;
 
 .section-text{
 color: var(--main-text-color);
+font-weight: 400;
 line-height: 1.5;
 letter-spacing: 0.02em;
 }
@@ -215,6 +217,16 @@ letter-spacing: 0.02em;
 .advantages-list{
 display: flex;
 gap: 24px;
+}
+
+.adv-icon-block{
+margin-bottom: 8px;
+text-align: center;
+padding-top: 24px;
+padding-bottom: 24px;
+
+background-color: var(--light-bg-color);
+border-radius: 4px;
 }
 
 /* -----------------Works---------------- */
@@ -260,6 +272,31 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 
 .team-list-text{
    text-align: center;
+   margin-bottom: 8px;
+}
+
+.socials{
+   display: flex;
+   justify-content: center;
+   gap: 24px;
+}
+
+.social-link{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 40px;
+   height: 40px;
+   background-color: var(--accent-text-color);
+   border-radius: 50%;
+}
+
+.social-link:hover, .social-link:focus{
+   background-color: var(--dark-accent-color);
+}
+
+.social-icon{
+   fill: var(--light-text-color);
 }
 
 /* ------Cards------- */
@@ -269,6 +306,36 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
    padding-bottom: 32px;
 }
 
+/* ---------Customers----------------- */
+.customers{
+   padding-top: 130px;
+   padding-bottom: 120px;
+}
+
+.customers-list{
+   display: flex;
+   justify-content: center;
+   gap: 24px;
+}
+
+.customers-item{
+   padding: 16px 32px;
+   border: 1px solid var(--main-icons-color);
+   border-radius: 4px;
+}
+
+.customers-icon{
+   fill: var(--main-icons-color);
+}
+
+.customers-item:hover .customers-icon{
+   fill: var(--dark-accent-color);
+
+}
+
+.customers-item:hover, .customers-item:focus {
+   border-color: var(--dark-accent-color);
+}
 /* --------------Footer--------------- */
 .footer{
 background-color: var(--dark-bg-color);
@@ -292,7 +359,34 @@ letter-spacing: 0.02em;
 width: 265px;
 }
 
+.footer-title{
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--light-text-color);
+}
 
+.footer-container{
+   display: flex;
+   align-items: top;
+}
+
+.footer-title{
+   margin-bottom: 16px;
+}
+
+.footer-left{
+   margin-right: 120px;
+}
+
+.footer-social-link{
+   background-color: var(--main-text-color);
+}
+
+.footer-social-link:hover, .footer-social-link:hover {
+background-color: var(--grn-accent-color);
+}
 
 /* ============================================================== */
 /*=================== PORTFOLIO PAGE =============================*/
@@ -320,7 +414,6 @@ width: 265px;
    letter-spacing: 0.04em;
    text-align: center;
 padding: 10px 25px;
-border: 1px solid var(--middle-text-color);
 border-radius: 4px;
 }
 
@@ -328,6 +421,7 @@ border-radius: 4px;
 .filter-button:focus{
    background-color: var(--dark-accent-color);
    color: var(--light-text-color);
+   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .cardset{
@@ -339,6 +433,15 @@ border-radius: 4px;
 .cardset-item{
 flex-basis: calc((100% - (24px * 2 )) / 3) ;
 }
+
+.cardset-item:hover, .cardset-item:focus{
+   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+         0px 1px 1px rgba(46, 47, 66, 0.16),
+         0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+
+
 
 .cardset-textblock{
    padding-top: 30px;
