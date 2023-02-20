@@ -570,15 +570,61 @@
                     </li>
                     </ul>
         </div>
+        <div class="footer-form-wrapper">
+        <h2 class="footer-title">Subscribe</h2>
+        <form class="footer-form" name="footer_form">
+          <label class="footer-form-label" for="footer_form_input">
+            <input class="footer-form-input" type="mail" name="footer_form_input" id="footer_form_input" placeholder="E-mail" >
+          </label>
+          <button class="footer-form-button button" type="submit">Subscribe         
+            <svg class="footer-form-icon" width="24" height="24">
+            <use href="./images/svg-sprite.svg#plane"></use>
+        </svg></button>
+        </form>
+        </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is is-hidden" data-modal>
       <div class="modal">
 <button class="modal-btn button" type="button" data-modal-close>
         <svg class="modal-icon" width="8" height="8">
             <use href="./images/svg-sprite.svg#modal-close"></use>
         </svg>
 </button>
+<strong class="modal-form-title">Leave your contacts and we will call you back</strong>
+<form class="modal-form" name="modal_form" autocomplete="on" novalidate>
+    <div class="modal-form-field">
+      <label class="modal-form-label" for="user_name">Name</label>
+        <input class="modal-form-input" type="text" name="user_name" id="user_name">
+            <svg class="modal-form-icon" width="24" height="24">
+              <use href="./images/svg-sprite.svg#user"></use>
+          </svg>
+    </div>
+    <div class="modal-form-field">
+      <label class="modal-form-label" for="user_phone">Phone</label>
+        <input class="modal-form-input" type="tel" name="user_phone" id="user_phone">
+            <svg class="modal-form-icon" width="24" height="24">
+              <use href="./images/svg-sprite.svg#phone"></use>
+          </svg>
+    </div>
+    <div class="modal-form-field">
+      <label class="modal-form-label" for="user_mail">Email</label>
+        <input class="modal-form-input" type="email" name="user_mail" id="user_mail">
+            <svg class="modal-form-icon" width="24" height="24">
+              <use href="./images/svg-sprite.svg#mail"></use>
+          </svg>
+    </div>
+      <label class="modal-form-label" for="comment">Comment</label>
+<textarea class="modal-form-textarea" name="comment" id="comment" rows="8" placeholder="Text input"></textarea>
+<label class="modal-form-agreement" for="privacy_policy"></label>
+  <div class="modal-agreement">
+    <input class="modal-form-checkbox" type="checkbox" name="privacy_policy" id="privacy_policy">
+    <span class="modal-form-desc">I accept the terms and conditions of the
+      <a class="modal-form-link" href="" target="_blank" rel="noopener no-referrer">Privacy Policy</a>
+    </span>
+  </div>
+<button class="modal-form-button button" type="submit">Send</button>
+</form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
