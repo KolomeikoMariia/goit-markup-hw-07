@@ -22,7 +22,7 @@
   </head>
   <body>
     <!-------------------------- Header---------------------------->
-    <!-- <header class="header-section header">
+    <header class="header-section header">
       <div class="header-container container">
         <a class="logo link logo-link" href="./index.html">
           <span class="logo-part">WEB</span>STUDIO</a
@@ -59,24 +59,103 @@
           </ul>
         </address>
       </div>
-      <button hidden>
-        <svg>
-          <use></use>
-        </svg>
+      <button class="mob-menu-btn js-open-menu">
+        <svg class="mob-menu-icon" width="32" height="22">
+                <use href="./images/Icons/svg-sprite.svg#menu-hamburger"></use>
+              </svg>
       </button>
-    </header> -->
-    <!-- <main> -->
+      <!-- -------------------------MOBILE MENU-------------------------------- -->
+<div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu button" type="button">
+          <svg class="menu-icon" width="8" height="8">
+            <use href="./images/Icons/svg-sprite.svg#modal-close"></use>
+          </svg>
+        </button>
+<ul class="mob-menu-nav list">
+  <li class="mob-menu-nav-item">
+      <a class="mob-menu-nav-link link" href="./index.html">Studio</a>
+  </li>
+    <li class="mob-menu-nav-item">
+      <a class="mob-menu-nav-link link" href="./portfolio.html">Portfolio</a>
+  </li>
+    <li class="mob-menu-nav-item">
+      <a class="mob-menu-nav-link link" href="">Contacts</a>
+  </li>
+</ul>
+<div class="mob-menu-contacts">
+  <ul class="mob-menu-adress list">
+    <li class="mob-menu-adress-item">
+      <a class="mob-menu-adress-link link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+    </li>
+    <li class="mob-menu-adress-item">
+        <a class="mob-menu-adress-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+    </li>
+  </ul>
+  <ul class="mob-socials list">
+                  <li class="socials-item">
+                    <a class="social-link"
+                      href=""
+                      target="_blank"
+                      aria-label="instagram"
+                      rel="no-referrer noopener"
+                    >
+                      <svg class="social-icon" width="16" height="16">
+                        <use href="./images/Icons/svg-sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials-item">
+                    <a class="social-link"
+                      href=""
+                      target="_blank"
+                      aria-label="twitter"
+                      rel="no-referrer noopener"
+                    >
+                      <svg class="social-icon" width="16" height="16">
+                        <use href="./images/Icons/svg-sprite.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials-item">
+                    <a class="social-link"
+                      href=""
+                      target="_blank"
+                      aria-label="facebook"
+                      rel="no-referrer noopener"
+                    >
+                      <svg class="social-icon" width="16" height="16">
+                        <use href="./images/Icons/svg-sprite.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials-item">
+                    <a class="social-link"
+                      href=""
+                      target="_blank"
+                      aria-label="linkedin"
+                      rel="no-referrer noopener"
+                    >
+                      <svg class="social-icon" width="16" height="16">
+                        <use href="./images/Icons/svg-sprite.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  </ul>
+</div>
+</div>
+    </header>
+    <main>
     <!---------------------- Hero section ------------------------->
-    <!-- <section class="hero-section">
+    <section class="hero-section">
         <div class="hero-container container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="button hero-button" type="button" data-modal-open>
             Order Service
           </button>
         </div>
-      </section> -->
+      </section>
     <!------------------ Advantages section ------------------->
-    <!-- <section class="section advantages-section">
+    <section class="section advantages-section">
       <div class="container">
         <h2 class="visually-hidden">Advantages</h2>
         <ul class="advantages-list list">
@@ -130,9 +209,9 @@
           </li>
         </ul>
       </div>
-    </section> -->
+    </section>
     <!------------------ Works section -------------------------->
-    <!-- <section class="section works-section">
+    <section class="section works-section">
       <div class="container">
         <h2 class="section-title works-title">What are we doing</h2>
         <ul class="list works-list">
@@ -162,9 +241,9 @@
           </li>
         </ul>
       </div>
-    </section> -->
+    </section>
     <!------------------------------- Team section -------------------------->
-    <!-- <section class="section team-section">
+    <section class="section team-section">
         <div class="team-container container">
           <h2 class="section-title team-title">Our Team</h2>
           <ul class="team-list list">
@@ -419,9 +498,9 @@
             </li>
           </ul>
         </div>
-      </section>  -->
+      </section> 
     <!----------------------- Customers-section------------------------>
-    <!-- <section class="customers section">
+    <section class="customers section">
         <div class="container">
           <h2 class="section-title">Customers</h2>
           <ul class="customers-list list">
@@ -505,8 +584,8 @@
             </li>
           </ul>
         </div>
-      </section> -->
-    <!-- </main> -->
+      </section>
+    </main>
     <!----------------------Footer----------------------->
     <footer class="footer">
       <div class="footer-container container">
@@ -600,11 +679,11 @@
       </div>
     </footer>
     <!-----------------------------Backdrop-------------------------->
-    <!-- <div class="backdrop is is-hidden" data-modal>
+    <div class="backdrop is is-hidden" data-modal>
       <div class="modal">
         <button class="modal-btn button" type="button" data-modal-close>
           <svg class="modal-icon" width="8" height="8">
-            <use href="./images/svg-sprite.svg#modal-close"></use>
+            <use href="./images/Icons/svg-sprite.svg#modal-close"></use>
           </svg>
         </button>
         <strong class="modal-form-title"
@@ -620,7 +699,7 @@
               id="user_name"
             />
             <svg class="modal-form-icon" width="24" height="24">
-              <use href="./images/svg-sprite.svg#user"></use>
+              <use href="./images/Icons/svg-sprite.svg#user"></use>
             </svg>
           </div>
           <div class="modal-form-field">
@@ -632,7 +711,7 @@
               id="user_phone"
             />
             <svg class="modal-form-icon" width="24" height="24">
-              <use href="./images/svg-sprite.svg#phone"></use>
+              <use href="./images/Icons/svg-sprite.svg#phone"></use>
             </svg>
           </div>
           <div class="modal-form-field">
@@ -644,7 +723,7 @@
               id="user_mail"
             />
             <svg class="modal-form-icon" width="24" height="24">
-              <use href="./images/svg-sprite.svg#mail"></use>
+              <use href="./images/Icons/svg-sprite.svg#mail"></use>
             </svg>
           </div>
           <label class="modal-form-label" for="comment">Comment</label>
@@ -677,6 +756,13 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script> -->
+        <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
