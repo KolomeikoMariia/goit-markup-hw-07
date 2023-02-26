@@ -184,6 +184,7 @@ padding-bottom: 24px;
 transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
 .navigate-link:hover, 
 .navigate-link:focus,
 .navigate-link.current {
@@ -207,8 +208,7 @@ line-height: 1.33;
 color: var(--main-text-color);
 letter-spacing: 0.02em;
 font-style: normal;
-padding-top: 24px;
-padding-bottom: 24px;
+
 
 transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -323,24 +323,33 @@ background-color: var(--accent-text-color);
    margin-bottom: 40px;
 }
 
-.mob-menu-adress-link {
-   font-weight: 500;
-   font-size: 20px;
-   line-height: 1.2;
-   letter-spacing: 0.02em;
-   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), font-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.mob-menu-adress-link:hover,
-.mob-menu-adress-link:focus {
-   font-size: 36px;
-   color: var(--accent-text-color);
-}
-
 .mob-socials {
    display: flex;
    justify-content: start;
    gap: 56px;
+}
+
+.mob-menu-adress-link-tel {
+   font-weight: 600;
+   font-size: 36px;
+   line-height: 1.11;
+   color: var(--accent-text-color);
+}
+
+@media screen and (min-width:320px) and (max-width:427px) {
+   .mob-menu-adress-link-tel {
+      font-size: 25px;
+   }
+      .mob-socials {
+         gap: 30px;
+      }
+}
+
+.mob-menu-adress-link-mail {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 1.2;
+      letter-spacing: 0.02em;
 }
 
 /* ----------------Hero---------------- */
@@ -453,10 +462,7 @@ margin-bottom: 8px;
 @media screen and (min-width: 768px) {
    .section-subtitle {
       text-align: left;
-      }
-   /* .advantages-section {
-      padding-bottom: 0;
-   } */
+   }
    }
 
    @media screen and (min-width: 1200px) {
@@ -650,13 +656,6 @@ padding-bottom: 32px;
 }
 
 /* ---------Customers----------------- */
-@media screen and (min-width:768px) and (max-width:1199px){
-   .customers-container {
-      padding-left: 108px;
-      padding-right: 108px;
-   }
-}
-
 
 .customers-list {
 display: flex;
@@ -668,7 +667,7 @@ row-gap: 72px;
 
 @media screen and (min-width: 768px) {
    .customers-list {
-column-gap: 24px;
+gap: 24px;
    }
 }
 
@@ -678,7 +677,7 @@ flex-basis: calc((100% - (1 * 16px)) / 2);
 
 @media screen and (min-width: 768px) {
    .customers-item {
-      flex-basis: calc((100% - (2 * 24px)) / 3);
+      flex-basis: calc((100% - 234px) / 3);
    }
 }
 
@@ -729,7 +728,11 @@ fill: var(--dark-accent-color);
 .footer-container{
 display: flex;
 flex-wrap: wrap;
+justify-content: left;
+padding-left: 108px;
+padding-right: 108px;
 column-gap: 24px;
+row-gap: 72px;
    }
 }
 
@@ -779,23 +782,20 @@ margin-bottom: 16px;
 }
 
 
-@media  screen and (max-width:768px)
+@media  screen and (max-width:767px)
 {
 .footer-left {
    margin-bottom: 72px;
    }
+      .footer-right {
+         margin-bottom: 72px;
+      }
 }
 
 @media  screen and (min-width:768px) {
    .footer-title { 
 text-align: left;
    }
-}
-
-@media screen and (max-width:767px){
-.footer-right{
-   margin-bottom: 72px;
-}
 }
 
 .footer-social-link {
@@ -820,6 +820,7 @@ background-color: var(--grn-accent-color);
    .footer-form {
       display: flex;
       align-items: start;
+      justify-content: center;
       gap: 24px;
       max-width: 100%;
    }
@@ -847,12 +848,6 @@ background-color: var(--grn-accent-color);
    .footer-form-input{
       margin-bottom: 0;
    }
-}
-
-@media screen and (min-width:768px) and (max-width:1200px) {
-   .footer-form-wrapper {
-         margin-top: 72px;
-      }
 }
 
 
@@ -1043,6 +1038,11 @@ padding-bottom: 24px;
 padding-right: 24px;
 padding-left: 24px;
 
+padding-top: 72px;
+padding-bottom: 24px;
+padding-right: 24px;
+padding-left: 24px;
+
 
 background-color: var(--modal-bg-color);
 
@@ -1052,6 +1052,13 @@ transition-property: transform, opacity;
 transition-duration: 500ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 transition-delay: 250ms;
+}
+
+@media screen and (min-width:320px) and (max-width:428px) {
+   .modal {
+      width: 315px;
+      height: 630px;
+   }
 }
 
 .modal-btn {
@@ -1207,6 +1214,12 @@ background-position: center;
 background-size: contain;
 
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width:320px) and (max-width:428px) {
+   .modal-form-checkbox {
+      background-size: cover;
+   }
 }
 
 .modal-form-checkbox:checked {
